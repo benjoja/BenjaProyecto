@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirk College</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Seccion header con menu de navegación-->
+    <header id="site-header">
+        <div class="logo"> Kirk College</div>
+        <label for="menu-toggle" class="Colegio"></label>
+
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="colegio.html">Colegio</a></li>
+                <li><a href="matricula.html">Matricúlate</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><br>
+    <main> 
+        <!-- Seccion hero - Corregido id a minúsculas para coincidir con el enlace -->
+        <section id="inicio" class="hero">
+            <div class="hero-contenido">
+        
+                <div class="hero-texto">
+                    <h1>Kirk College</h1>
+                    <p>
+                        Construyendo hoy los cimientos de las mentes que definirán el mañana,
+                        a través de una pedagogía centrada en el pensamiento crítico y la superación constante.
+                    </p>
+                    <a href="#colegio" class="btn-cta">Colegio</a>
+                </div>
+        
+                <div class="hero-imagen">
+                    <img src="logo.png" alt="Imagen del colegio">
+                </div>
+        
+            </div>
+        </section>
+
+        
+
+
+        <!-- Seccion de Recursos - Corregido: el id debe ser 'recursos' (minúsculas) -->
+        <section id="recursos">
+            <h2> Centro de Recursos Kirk College</h2>
+            <div class="Recursos">
+                <article class="Recursos-card">
+                    <h3> Biblioteca Digital y Repositorios Académicos</h3>
+                    <p>
+                        <strong>Acceso directo a herramientas de investigación y material complementario para el estudio independiente.</strong> <br> <br>
+                        Plataforma de E-books: Acceso a nuestra selección de libros de texto y literatura. <br> <br>
+                        Guías de Estudio: Material descargable por grado y asignatura para reforzar el aprendizaje. <br> <br>
+                        Bases de Datos: Enlaces a fuentes académicas confiables para proyectos y monografías.
+                    </p>
+                </article>
+
+                <article class="Apoyo estudiante">
+                    <h3> Apoyo al Estudiante</h3>
+                    <p>
+                        <strong>Recursos diseñados para el bienestar emocional y el desarrollo de habilidades blandas.</strong> <br><br>
+                        Técnicas de Estudio: Webinars y documentos sobre organización del tiempo y mapas mentales. <br><br>
+                        Orientación Vocacional: Test de aptitudes y folletos sobre carreras universitarias (para niveles superiores). <br><br>
+                        Bienestar y Convivencia: Guías sobre ciudadanía digital, seguridad en redes sociales y manejo del estrés.
+                    </p>
+                </article>
+
+                <article class="Herramientas padres">
+                    <h3> Herramientas para Padres de Familia</h3>
+                    <p>
+                        <strong>El puente de comunicación y formación para que las familias acompañen el proceso educativo.</strong> <br><br>
+                        Escuela para Padres: Artículos y videos sobre crianza positiva y apoyo escolar en casa. <br><br>
+                        Calendario Institucional: Descarga el cronograma de actividades, exámenes y eventos especiales. <br><br>
+                        Manuales y Reglamentos: Acceso rápido al Manual de Convivencia y políticas del colegio.
+                    </p>
+                </article>
+
+                <!-- Corregido: se cerró correctamente el article tecnología -->
+                <article class="tecnologia">
+                    <h3>Tecnología y Soporte</h3>
+                    <p>
+                        <strong>El ecosistema digital que nos mantiene conectados.</strong> <br><br>
+                        Portal de Calificaciones: Enlace directo a la plataforma de seguimiento académico. <br><br>
+                        Tutoriales de Plataformas: Guías paso a paso para el uso de Google Classroom, Microsoft Teams o el software específico del colegio. <br><br>
+                        Mesa de Ayuda: Contacto directo para soporte técnico de correos institucionales.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- seccion aside + nosotros -->
+        <div class="fila-mixta"> 
+            <aside id="stats">
+                <h2> En números</h2>
+                <ul>
+                    <li> + 500 Estudiantes Matriculados</li>
+                    <li> 10 años de experiencia</li>
+                    <li> 99.99% de satisfacción</li>
+                </ul>
+            </aside>
+
+            <section id="nosotros"> 
+                <h2> Quiénes somos</h2>
+                <p> 
+                    En Kirk College, somos una comunidad educativa dedicada a transformar el potencial de nuestros estudiantes en una fuerza de cambio positiva para el mundo. Creemos que la educación no se limita a la transmisión de datos, sino que es un proceso vivo de descubrimiento, donde el rigor académico se entrelaza con la formación de valores sólidos.
+                </p>
+                <p>
+                    Actualmente tenemos sucursales en Chillán, Talca, Texas y Londres.
+                </p>
+            </section>
+        </div>
+
+        <!-- Seccion contacto - Corregido: el id debe ser 'contacto' (minúsculas) -->
+        <section id="contacto"> 
+            <h2> Contáctanos </h2>
+            <form id="form-contacto"> 
+                <label for="nombre"> Nombre</label>
+                <input type="text" id="Nombre" placeholder="Tu nombre completo" required>
+
+                <label for="correo"> Correo</label>
+                <input type="email" id="correo" placeholder="ejemplo@gmail.cl" required> 
+
+                <label for="mensaje"> Mensaje</label>
+                <textarea id="mensaje" placeholder="Cuéntanos en qué podemos ayudarte..." required> </textarea>
+                <button type="submit" id="boton"> ➡️</button>
+            </form>
+        </section>
+    </main>
+
+    <!--footer-->
+    <footer id="site-footer"> 
+        <p>&copy; 2026 Kirk College | Todos los derechos reservados</p>
+
+        <nav class="footer-nav">
+            <!-- Corregidos los enlaces vacíos -->
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Términos y Condiciones</a>
+            <a href="#">Mapa del Sitio</a>
+        </nav>
+    </footer>
+</body>
+</html>
